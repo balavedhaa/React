@@ -9,18 +9,19 @@ class StateManagement extends React.Component{
     super()
     this.state=({os: "windows"})
   }
-  windows = () =>this.setState = {os:"windows"}
-  mac = () =>this.setState = {os:"mac"}
- linux = () =>this.setState = {os:"linux"}
+  windows = () =>{this.setState = ({os:"windows"})}
+  mac = () =>{this.setState = ({os:"mac"})}
+ linux = () =>{this.setState = ({os:"linux"})}
 
   render(){
     return(
     
           <div>
-            <h1>I am Using {this.state} machine</h1>
-            <button onClick ={this}>change to Mac</button>
-            <button>change to linux</button>
-            <button>change to windows</button>
+            <h1>I am Using {this.state.windows} Operating system in {this.props.laptop} machine</h1>
+            <button type = "button" onClick ={this.mac}>change to mac</button>
+            <button type = "button" onClick ={this.linux}>change to linux</button>
+            <button type = "button" onClick ={this.windows}>change to windows</button>
+            
             <br></br>
             <br></br>
             <App></App>
