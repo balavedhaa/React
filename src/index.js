@@ -9,9 +9,9 @@ class StateManagement extends React.Component{
     super()
     this.state=({os: "windows"})
   }
-  windows = () =>{this.setState = ({os:"windows"})}
-  mac = () =>{this.setState = ({os:"mac"})}
- linux = () =>{this.setState = ({os:"linux"})}
+  windows = () =>{this.setState ({os:"windows"})}
+  mac = () =>{this.setState ({os:"mac"})}
+ linux = () =>{this.setState ({os:"linux"})}
 
   render(){
     return(
