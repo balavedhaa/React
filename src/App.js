@@ -1,6 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
 
+class myComp1 extends React.Component{
+  
+}
 function App() {
   return (
     <div className="App">
@@ -15,11 +19,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-<<<<<<< HEAD
-          Welcome to Learn ReactJS
-=======
             Welcome to Learn ReactJS
->>>>>>> 068517876106c2fc3718cd58b4fd9ed297b6a2a9
         </a>
       </header>
     </div>
