@@ -18,7 +18,7 @@ class StateManagement extends React.Component{
     
           <div>
             <h1>I am Using {this.state} machine</h1>
-            <button>change to Mac</button>
+            <button onClick ={this}>change to Mac</button>
             <button>change to linux</button>
             <button>change to windows</button>
             <br></br>
