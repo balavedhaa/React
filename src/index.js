@@ -4,36 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-class StateManagement extends React.Component{
-  constructor(){
-    super()
-    this.state=({os: "windows"})
-  }
-  windows = () =>{this.setState ({os:"windows"})}
-  mac = () =>{this.setState ({os:"mac"})}
-  linux = () =>{this.setState ({os:"linux"})}
 
-  render(){ 
-    return(
-    
-          <div>
-            <h1>I am Using {this.state.os} Operating system in {this.props.laptop} machine</h1>
-            <button type = "button" onClick ={this.mac}>change to mac</button>
-            <button type = "button" onClick ={this.linux}>change to linux</button>
-            <button type = "button" onClick ={this.windows}>change to windows</button>
-            <br></br>
-            <br></br>
-            <App></App>
-          </div>
-
-    )
-  }
-}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <StateManagement />
+    <App />
   </React.StrictMode>
 );
 
