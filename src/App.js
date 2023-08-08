@@ -1,28 +1,21 @@
-import logo from './logo.svg';
+import { Route,Routes, BrowserRouter } from 'react-router-dom';
 import './App.css';
-import React from 'react';
+import Navigati from './components/Navigation';
+import Navbar from './components/NavLayout';
+import Blog from './components/Blog';
+import Apps from './components/ReactApp';
 
-class myComp1 extends React.Component{
-  
-}
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-            Welcome to Learn ReactJS
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+      <Route path="/" element={<Navbar />} >
+          <Route index element={<Navigati />} />
+          <Route path='blog' element ={<Blog />} />
+          <Route path='reactApp' element ={<Apps />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
